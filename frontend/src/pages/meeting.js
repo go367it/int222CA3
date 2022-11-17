@@ -10,7 +10,7 @@ export default function Video({ match }) {
     console.log(id);
 
     axios
-      .get(`http://localhost:5000/video-call/${id}`)
+      .get(`https://int222.herokuapp.com/video-call/${id}`)
       .then((res) => {
         if (res.status === 200) {
           const script = document.createElement("script");
