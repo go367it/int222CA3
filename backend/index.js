@@ -56,6 +56,8 @@ const createRoom = (room) => {
 };
 
 app.get("/video-call/:id", async function (req, res) {
+
+  console.log('hit')
   const roomId = req.params.id;
 
   const room = await getRoom(roomId);
